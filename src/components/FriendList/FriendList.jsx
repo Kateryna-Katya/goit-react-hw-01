@@ -1,6 +1,6 @@
+import FriendListItem from "../FriendListItem/FriendListItem.jsx";
 import clsx from "clsx";
 import style from "./FriendList.module.css";
-import FriendListItem from "../FriendListItem/FriendListItem.jsx";
 
 function FriendList({ friends }) {
   return (
@@ -19,4 +19,5 @@ function FriendList({ friends }) {
     </ul>
   );
 }
+
 export default FriendList;

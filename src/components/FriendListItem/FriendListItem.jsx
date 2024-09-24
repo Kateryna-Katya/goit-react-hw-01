@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import style from "./FriendListItem.module.css";
 
-function FriendListItem(avatar, name, isOnline) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
     <div>
-      <img src="{clsx(style.avatar)}" alt={avatar} width="48" />
+      <img className={clsx(style.img)} src={avatar} alt="Avatar" width="48" />
       <p>{name}</p>
       <p
         className={clsx(
@@ -17,4 +17,5 @@ function FriendListItem(avatar, name, isOnline) {
     </div>
   );
 }
+
 export default FriendListItem;
